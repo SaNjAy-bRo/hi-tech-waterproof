@@ -39,13 +39,17 @@
             <div class="hero-right">
                 <div class="cta-form-container">
                     <h3>Get a Call Back</h3>
-                    <form action="#" method="POST" class="cta-form">
+                    <form action="/api/submit" method="POST" class="cta-form">                        
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
                             <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                         </div>
+                        
+                        <!-- Anti-spam protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
                         <button type="submit" class="btn btn-primary btn-block">Submit <i class="fa-solid fa-arrow-right"></i></button>
                     </form>
                 </div>
